@@ -52,3 +52,12 @@ public class WordCount {
     System.exit(job.waitForCompletion(true) ? 0 : 1);
   }
 }
+
+
+
+[28-04-2025 15:55] Om Borekar: //hadoop
+[28-04-2025 15:55] Om Borekar: javac -classpath hadoop classpath -d ~/wordcount_classes WordCount.java
+[28-04-2025 15:55] Om Borekar: cd ~
+[28-04-2025 15:55] Om Borekar: jar -cvf wordcount.jar -C wordcount_classes/ .
+[28-04-2025 15:56] Om Borekar: hadoop jar wordcount.jar WordCount input output
+[28-04-2025 15:56] Om Borekar: cat ~/output/part-r-00000
